@@ -3,235 +3,662 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahriar Farhan Sajid /portfolio</title>
+
+    <meta name="description" content="Shahriar Farhan Sajid — Creative Developer and Software Engineering student.">
+
+    <title>Shahriar Farhan Sajid | Creative Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-        <h2 class="logo">SAJID.</h2>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="nav container">
 
-    </nav>
-
-    
-<section class="hero">
-
-    
-    <div class="hero-content">
-
-        <h1>
-            Hi, I'm
-            <span>Shahriar Farhan Sajid</span>
-        </h1>
-
-        <h2>Software Engineering Student</h2>
-
-        <p>
-            I am a Software Engineering student at
-            Daffodil International University.
-            I am passionate about programming,
-            web development and technology.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#" class="btn">Download CV</a>
-
-            <a href="#projects" class="btn btn-outline">
-                View My Projects
+            <a class="brand" href="#home">
+                <span class="brand-mark">S</span>
+                <span>SAJID<span class="brand-dot">.</span></span>
             </a>
 
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+
+                <a class="nav-contact" href="#contact">
+                    Let's talk <span>↗</span>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero container" id="home">
+
+            <div class="hero-copy">
+
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    AVAILABLE FOR LEARNING & COLLABORATION
+                </div>
+
+                <p class="hero-kicker">HELLO, I'M</p>
+
+                <h1>
+                    Shahriar Farhan
+                    <br>
+                    <span class="gradient-text">Sajid.</span>
+                </h1>
+
+                <div class="role-line">
+                    <span class="role-prefix">I build</span>
+                    <span id="typedRole">digital experiences.</span>
+                    <span class="caret">|</span>
+                </div>
+
+                <p class="hero-description">
+                    A Software Engineering student with a passion for
+                    creative development, thoughtful design, and turning
+                    ideas into useful digital experiences.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="button button-primary" href="#projects">
+                        Explore my work <span>↗</span>
+                    </a>
+
+                    <a class="button button-ghost" href="#contact">
+                        Get in touch
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/farhansajid038"
+                       target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/sajid-farhan-193b82449/"
+                       target="_blank" rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+
+                    <a href="mailto:farhansajid038@gmail.com">
+                        Email ↗
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE DESIGN -->
+            <div class="hero-art">
+
+                <div class="orbit orbit-a"></div>
+                <div class="orbit orbit-b"></div>
+
+                <div class="hero-card">
+
+                    <div class="card-top">
+                        <span>PROFILE / 001</span>
+                        <span class="live-dot">● ONLINE</span>
+                    </div>
+
+                    <div class="profile-frame">
+
+                        <img
+                            src="images/profile.jpeg"
+                            alt="Shahriar Farhan Sajid"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+                        >
+
+                        <div class="photo-fallback">
+                            SF<span>.</span>
+                        </div>
+
+                    </div>
+
+                    <div class="hero-card-bottom">
+
+                        <div>
+                            <strong>Creative Developer</strong>
+                            <small>Dhaka, Bangladesh</small>
+                        </div>
+
+                        <span class="card-arrow">↗</span>
+
+                    </div>
+
+                </div>
+
+                <div class="floating-chip chip-top">
+                    ✳ <span>DESIGN MINDED</span>
+                </div>
+
+                <div class="floating-chip chip-bottom">
+                    <span class="chip-bars">▥▥▥</span>
+                    CODE / CREATE / REPEAT
+                </div>
+
+                <span class="decor decor-cross">✳</span>
+                <span class="decor decor-plus">＋</span>
+
+            </div>
+
+            <a class="scroll-cue" href="#about">
+                <span></span>
+                SCROLL TO EXPLORE
+            </a>
+
+        </section>
+
+
+        <!-- MOVING TEXT -->
+        <div class="ticker">
+            <div class="ticker-track">
+
+                <span>CREATIVE DEVELOPMENT ✳</span>
+                <span>SOFTWARE ENGINEERING ✳</span>
+                <span>BUILDING FOR THE WEB ✳</span>
+                <span>CREATIVE DEVELOPMENT ✳</span>
+                <span>SOFTWARE ENGINEERING ✳</span>
+                <span>BUILDING FOR THE WEB ✳</span>
+
+            </div>
         </div>
 
-    </div>
 
-   
-    <div class="hero-image">
+        <!-- ABOUT -->
+        <section class="section container" id="about">
 
-       <img src="images/profile.jpeg" alt="Shahriar Farhan Sajid">
+            <div class="section-heading">
+                <p class="section-index">01 / ABOUT</p>
 
-    </div>
+                <h2>
+                    Curious mind.
+                    <br>
+                    <span class="muted">Creative approach.</span>
+                </h2>
+            </div>
 
-</section>
+            <div class="about-grid">
 
+                <div class="about-main">
 
-<section class="about" id="about">
+                    <p class="large-copy">
+                        I'm a Software Engineering student at
+                        <span class="text-accent">
+                            Daffodil International University
+                        </span>,
+                        exploring the space where technology meets creativity.
+                    </p>
 
-    <h2><span>About</span></h2>
+                    <p class="body-copy">
+                        I enjoy learning how things work, building web
+                        projects, and improving my skills one project at
+                        a time. My current focus is strengthening my
+                        foundations in front-end development and exploring
+                        intelligent software systems.
+                    </p>
 
-    <p>
-        My name is Shahriar Farhan Sajid.
-        I am a Software Engineering student
-        at Daffodil International University.
+                </div>
 
-        I enjoy learning programming,
-        developing websites and exploring
-        new technologies.
+                <div class="about-note">
 
-        My goal is to become a skilled
-        software engineer.
-    </p>
+                    <span class="note-icon">✳</span>
 
-</section>
+                    <p>
+                        "Good work comes from curiosity, consistency,
+                        and the courage to keep experimenting."
+                    </p>
 
+                    <span class="note-label">
+                        MY WORKING PHILOSOPHY
+                    </span>
 
-<section class="education" id="education">
+                </div>
 
-    <h2>My <span>Education</span></h2>
+            </div>
 
-    <div class="education-container">
-
-        <div class="education-card">
-            <h3>BSc in Software Engineering</h3>
-            <h4>Daffodil International University</h4>
-            <p>Department: Software Engineering</p>
-            <p>Status: Currently Studying</p>
-        </div>
-
-        <div class="education-card">
-            <h3>Higher Secondary Certificate (HSC)</h3>
-            <h4>Police Line School & College,Rangpur</h4>
-            <p>Group: Science</p>
-            <p>Passing Year: 2022</p>
-            <p>GPA: 5.00</p>
-        </div>
-
-        <div class="education-card">
-            <h3>Secondary School Certificate (SSC)</h3>
-            <h4>Kishorgonj Model High School</h4>
-            <p>Group: Science</p>
-            <p>Passing Year: 2020</p>
-            <p>GPA: 5.00</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="skills" id="skills">
-    <h2>My<span>Skills</span></h2>
-
-    <div class="skills-container">
-        <div class="skill-card">
-            <h3>HTML</h3>
-            <p>Proficient in creating structured web pages using HTML5.</p>
-        </div>
-        <div class="skill-card">
-            <h3>CSS</h3>
-            <p>Experienced in styling web pages with CSS and responsive design.</p>
-        </div>
-        <div class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Skilled in adding interactivity and dynamic content to websites using JavaScript.</p>
-        </div>
-        <div class="skill-card">
-            <h3>Java</h3>
-            <p>Knowledgeable in object-oriented programming and developing robust applications using Java.</p>
-        </div>    
+        </section>
 
 
-    </div>
+        <!-- EDUCATION -->
+        <section class="section container" id="education">
 
-</section>
+            <div class="section-heading">
 
+                <p class="section-index">02 / EDUCATION</p>
 
-<section class="projects" id="projects">
+                <h2>
+                    The learning
+                    <br>
+                    <span class="muted">continues.</span>
+                </h2>
 
-    <h2>My <span>Projects</span></h2>
-
-    <div class="projects-container">
-
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-
-            <p>
-                A personal portfolio website to showcase
-                my skills, projects and personal information.
-            </p>
-
-            <h4>HTML | CSS | JavaScript</h4>
-
-            <a href="#" class="project-btn">View Project</a>
-        </div>
+            </div>
 
 
-        <div class="project-card">
-            <h3>Student Management System</h3>
+            <div class="timeline">
 
-            <p>
-                A system designed to manage student
-                information and academic records.
-            </p>
+                <article class="timeline-item">
 
-            <h4>Java | OOP</h4>
+                    <div class="timeline-year">PRESENT</div>
 
-            <a href="#" class="project-btn">View Project</a>
-        </div>
+                    <div class="timeline-marker"></div>
 
+                    <div class="timeline-content">
 
-        <div class="project-card">
-            <h3>AI Smart Manufacturing</h3>
+                        <span class="tag">UNDERGRADUATE</span>
 
-            <p>
-                An intelligent system for monitoring
-                manufacturing processes using AI.
-            </p>
+                        <h3>BSc in Software Engineering</h3>
 
-            <h4>AI | Machine Learning | IoT</h4>
+                        <p>Daffodil International University</p>
 
-            <a href="#" class="project-btn">View Project</a>
-        </div>
+                        <small>
+                            Department of Software Engineering
+                        </small>
 
-    </div>
+                    </div>
 
-</section>
+                </article>
 
 
-<section class="contact" id="contact">
+                <article class="timeline-item">
 
-    <h2>Contact <span>Me</span></h2>
+                    <div class="timeline-year">2022</div>
 
-    <p class="contact-text">
-        Have a project or an opportunity?
-        Feel free to contact me.
-    </p>
+                    <div class="timeline-marker"></div>
 
-    <div class="contact-info">
+                    <div class="timeline-content">
 
-        <p>Email: farhansajid038@gmail.com</p>
+                        <span class="tag">HIGHER SECONDARY</span>
 
-        <p>Location: Dhaka, Bangladesh</p>
+                        <h3>HSC — Science</h3>
 
-    </div>
+                        <p>
+                            Police Line School & College, Rangpur
+                        </p>
 
-    <a href="mailto:farhansajid038@gmail.com" class="btn">
-        Send Me an Email
-    </a>
+                        <small>GPA 5.00</small>
 
-</section>
+                    </div>
+
+                </article>
 
 
+                <article class="timeline-item">
+
+                    <div class="timeline-year">2020</div>
+
+                    <div class="timeline-marker"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="tag">SECONDARY</span>
+
+                        <h3>SSC — Science</h3>
+
+                        <p>Kishorgonj Model High School</p>
+
+                        <small>GPA 5.00</small>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="section container" id="skills">
+
+            <div class="section-heading">
+
+                <p class="section-index">03 / TOOLKIT</p>
+
+                <h2>
+                    Tools I use.
+                    <br>
+                    <span class="muted">Skills I grow.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="skills-layout">
+
+                <p class="body-copy skills-intro">
+                    A growing toolkit for designing, developing,
+                    and bringing digital ideas to life.
+                </p>
+
+
+                <div class="skill-grid">
+
+                    <div class="skill-card">
+                        <span class="skill-number">01</span>
+                        <span class="skill-symbol">⌘</span>
+                        <h3>HTML</h3>
+                        <p>Structure & semantics</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-number">02</span>
+                        <span class="skill-symbol">✳</span>
+                        <h3>CSS</h3>
+                        <p>Layout & visual design</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-number">03</span>
+                        <span class="skill-symbol">JS</span>
+                        <h3>JavaScript</h3>
+                        <p>Interactive experiences</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <span class="skill-number">04</span>
+                        <span class="skill-symbol">☕</span>
+                        <h3>Java</h3>
+                        <p>Object-oriented programming</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="section container" id="projects">
+
+            <div class="section-heading projects-heading">
+
+                <div>
+                    <p class="section-index">04 / SELECTED WORK</p>
+
+                    <h2>
+                        Ideas into
+                        <br>
+                        <span class="muted">interfaces.</span>
+                    </h2>
+                </div>
+
+                <p class="body-copy">
+                    A selection of academic and personal projects.
+                    More experiments are on the way.
+                </p>
+
+            </div>
+
+
+            <div class="project-grid">
+
+
+                <!-- PROJECT 1 -->
+                <article class="project-card project-featured">
+
+                    <div class="project-visual visual-portfolio">
+
+                        <div class="mock-window">
+
+                            <div class="mock-dots">
+                                <i></i><i></i><i></i>
+                            </div>
+
+                            <div class="mock-content">
+
+                                <span>HELLO, WORLD.</span>
+
+                                <strong>
+                                    Creative
+                                    <br>
+                                    digital space<span>.</span>
+                                </strong>
+
+                                <div class="mock-line"></div>
+
+                            </div>
+
+                        </div>
+
+                        <span class="visual-label">WEB / 001</span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div>
+
+                            <span class="tag">
+                                HTML · CSS · JAVASCRIPT
+                            </span>
+
+                            <h3>Portfolio Website</h3>
+
+                            <p>
+                                A personal website to showcase my
+                                background, skills, and projects.
+                            </p>
+
+                        </div>
+
+                        <span class="project-index">01</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+
+                    <div class="project-visual visual-bus">
+
+                        <div class="bus-ticket">
+
+                            <span>TRAVEL / TICKET</span>
+
+                            <strong>
+                                YOUR
+                                <br>
+                                NEXT
+                                <br>
+                                <em>JOURNEY.</em>
+                            </strong>
+
+                            <div class="ticket-line"></div>
+
+                            <small>BOOK • CONFIRM • GO</small>
+
+                        </div>
+
+                        <span class="visual-label">WEB / 002</span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div>
+
+                            <span class="tag">
+                                HTML · CSS · JAVASCRIPT
+                            </span>
+
+                            <h3>Bus Ticket Booking System</h3>
+
+                            <p>
+                                A booking-focused web project concept
+                                for browsing trips and managing tickets.
+                            </p>
+
+                        </div>
+
+                        <span class="project-index">02</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+                <article class="project-card">
+
+                    <div class="project-visual visual-ai">
+
+                        <div class="ai-orb">
+                            <span>AI</span>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+
+                        <div class="ai-caption">
+                            SMART FACTORY
+                            <br>
+                            MONITORING
+                        </div>
+
+                        <span class="visual-label">SYSTEM / 003</span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div>
+
+                            <span class="tag">
+                                AI · MACHINE LEARNING · IOT
+                            </span>
+
+                            <h3>AI Smart Manufacturing</h3>
+
+                            <p>
+                                An intelligent monitoring concept for
+                                machine conditions, anomaly insights,
+                                and maintenance support.
+                            </p>
+
+                        </div>
+
+                        <span class="project-index">03</span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+
+            <div class="container contact-inner">
+
+                <p class="section-index">05 / CONTACT</p>
+
+                <h2>
+                    Have an idea?
+                    <br>
+                    <span class="gradient-text">Let's build it.</span>
+                </h2>
+
+                <p class="contact-copy">
+                    I'm always open to learning, collaborating,
+                    and discussing interesting ideas.
+                </p>
+
+                <a class="contact-email"
+                   href="mailto:farhansajid038@gmail.com">
+
+                    farhansajid038@gmail.com
+                    <span>↗</span>
+
+                </a>
+
+
+                <div class="contact-bottom">
+
+                    <span>BASED IN DHAKA, BANGLADESH</span>
+
+                    <div>
+
+                        <a href="https://github.com/farhansajid038"
+                           target="_blank" rel="noopener noreferrer">
+                            GITHUB ↗
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/sajid-farhan-193b82449/"
+                           target="_blank" rel="noopener noreferrer">
+                            LINKEDIN ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+
+        <a class="brand" href="#home">
+            <span class="brand-mark">S</span>
+            <span>SAJID<span class="brand-dot">.</span></span>
+        </a>
+
+        <p>
+            Designed & built with curiosity.
+            <span>© <span id="year"></span> Shahriar Farhan Sajid</span>
+        </p>
+
+        <a href="#home" class="back-top">BACK TO TOP ↑</a>
+
+    </footer>
+
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
-
-<footer class="footer">
-    <h3>SAJID.</h3>
-    <p>Designed & Developed by Shahriar Farhan Sajid</p>
-    <p> © 2026 All Rights Reserved.</p>
-    <a href="#home">Back to Top</a>
-</footer>
-
 
 </body>
 </html>
